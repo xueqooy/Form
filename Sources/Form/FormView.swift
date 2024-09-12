@@ -1,7 +1,6 @@
 //
 //  FormView.swift
 //
-//
 //  Created by xueqooy on 2024/9/10.
 //
 
@@ -9,15 +8,6 @@ import UIKit
 import SnapKit
 
 /// Similar to the vertical StackView, it supports row alignment (leading, trailing, center and fill) and row height settings.
-///
-/// It can automatically adjust the content offset to make the first responder visible according to the keyboard changes.
-///
-/// There are three ways to set item spacing in FormView:
-/// 1. Set `itemSpacing` for FormView
-/// 2. Add `FormSpacer`
-/// 3. Call `settingCustomimSpacingAfter` of FormItem
-/// Three flexible methods can be used to meet various item spacing setting requirements
-///
 public class FormView: UIView {
     
     public enum ContentScrollingBehavior {

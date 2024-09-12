@@ -1,8 +1,7 @@
 //
 //  UIView+Extensions.swift
-//  EDUI
 //
-//  Created by 🌊 薛 on 2022/9/14.
+//  Created by xueqooy on 2022/9/14.
 //
 
 import UIKit
