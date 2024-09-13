@@ -13,7 +13,7 @@ public class FormView: UIView {
     public enum ContentScrollingBehavior {
         case normal // Scrollable, the content offset will be adjusted according to the keyboard to make the content always visible.
         
-        case limited // Under normal circumstances, it cannot be scrolled. The content height is less than or equal to the view height, but the content offset will be adjusted according to the keyboard to make the content always visible.
+        case limited // Under normal circumstances, it cannot be scrolled. The content height is less than or equal to the view height, but the content offset will be adjusted according to the keyboard.
             
         case disabled // Non-scrollable, the content height is always equal to the view height.
     }

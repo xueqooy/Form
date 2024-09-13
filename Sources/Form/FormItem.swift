@@ -103,7 +103,7 @@ open class FormItem {
 extension FormItem {
     
     @discardableResult
-    func bindingCustomSpacingAfter<T>(to publisher: some Publisher<T, Never>, transform: @escaping (T) -> CGFloat) -> Self {
+    func bindingCustomSpacingAfter<T, V>(to publisher: T, transform: @escaping (V) -> CGFloat) -> Self where T : Publisher, T.Output == V, T.Failure == Never {
         customSpacingBinding =
         publisher
             .map(transform)
@@ -115,12 +115,12 @@ extension FormItem {
     }
     
     @discardableResult
-    func bindingCustomSpacingAfter(to publisher: some Publisher<CGFloat, Never>) -> Self {
+    func bindingCustomSpacingAfter<T>(to publisher: T) -> Self where T : Publisher, T.Output == CGFloat, T.Failure == Never {
         bindingCustomSpacingAfter(to: publisher) { $0 }
     }
     
     @discardableResult
-    func bindingHidden<T>(to publisher: some Publisher<T, Never>, transform: @escaping (T) -> Bool) -> Self {
+    func bindingHidden<T, V>(to publisher: T, transform: @escaping (V) -> Bool) -> Self where T : Publisher, T.Output == V, T.Failure == Never {
         hiddenBinding =
         publisher
             .map(transform)
@@ -132,7 +132,7 @@ extension FormItem {
     }
     
     @discardableResult
-    func bindingHidden(to publisher: some Publisher<Bool, Never>, toggled: Bool = false) -> Self {
+    func bindingHidden<T>(to publisher: T, toggled: Bool = false) -> Self where T : Publisher, T.Output == Bool, T.Failure == Never {
         bindingHidden(to: publisher) {
             toggled ? !$0 : $0
         }
