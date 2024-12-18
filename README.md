@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/5980a742-36ca-4bc1-80e4-5f77c8a6fd4a" alt="form_view_screenshot" height="300">
+<img src="https://github.com/user-attachments/assets/24c71883-d624-48d1-b484-43c5a1b2b87a" alt="form_view_screenshot" height="300">
 
 # FormView
 
