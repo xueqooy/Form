@@ -16,10 +16,7 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
    - Set a global `itemSpacing` for the entire FormView.
    - Insert custom spacers using the `FormSpacer`.
    - Adjust item-specific spacing using the `settingCustomSpacingAfter` method on individual form items.
-
-## Usage
-
-FormView provides a simple and flexible API to create organized and well-aligned forms.
+8. **DSL**：Supports a DSL syntax for a SwiftUI-like experience.
 
 ### Example
 
