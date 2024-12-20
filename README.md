@@ -58,8 +58,3 @@ formView.populate {
     FormRow(loginButton, insets: .init(top: 0, left: 20, bottom: 0, right: 20))
 }
 ```
-
-## Note
-
-This repository does not provide any installation methods like CocoaPods or Swift Package Manager. You are free to copy the codebase and make any custom modifications as per your requirements.
-
