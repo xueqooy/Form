@@ -18,11 +18,11 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
    - Adjust item-specific spacing using the `settingCustomSpacingAfter` method on individual form items.
 8. **DSL**：Supports a DSL syntax for a SwiftUI-like experience.
 
-### Requirements
+## Requirements
 iOS 13.0+
 tvOS 13.0+
 
-### Usage Example
+## Usage Example
 
 <img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300">
 
@@ -75,9 +75,9 @@ let package = Package(
 )
 ```
 
-### License
+## License
 Form is licensed under the MIT License. See LICENSE for more information.
 
-### Contact
+## Contact
 - GitHub: https://github.com/xueqooy/XUI
 - Email: xue_qooy@163.com
