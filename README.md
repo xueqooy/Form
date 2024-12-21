@@ -2,7 +2,7 @@
 
 # FormView
 
-FormView is a flexible, keyboard-aware and scrollable container similar to a vertical `UIStackView`
+The combination of UIStackView(Vertical Axis) and UIScrollView, and more.
 
 ## Key Features
 
