@@ -1,5 +1,5 @@
-import XCTest
 @testable import Form
+import XCTest
 
 final class FormTests: XCTestCase {
     func testExample() throws {

@@ -7,25 +7,24 @@
 import UIKit
 
 public class FormSeparator: FormItem {
-    
     public var leadingPadding: CGFloat {
         didSet {
             (loadedView as? FormSeparatorView)?.leadingPadding = leadingPadding
         }
     }
-    
+
     public var trailingPadding: CGFloat {
         didSet {
             (loadedView as? FormSeparatorView)?.trailingPadding = trailingPadding
         }
     }
-    
+
     public var color: UIColor? {
         didSet {
             (loadedView as? FormSeparatorView)?.color = color
         }
     }
-    
+
     public var thickness: CGFloat {
         didSet {
             (loadedView as? FormSeparatorView)?.thickness = thickness
@@ -37,18 +36,16 @@ public class FormSeparator: FormItem {
         self.thickness = thickness
         self.leadingPadding = leadingPadding
         self.trailingPadding = trailingPadding
-        
+
         super.init()
     }
     
-    public override func createView() -> UIView {
+    override public func createView() -> UIView {
         FormSeparatorView(color: color, thickness: thickness, leadingPadding: leadingPadding, trailingPadding: trailingPadding)
     }
 }
 
-
-class FormSeparatorView: UIView {
-    
+private class FormSeparatorView: UIView {
     var leadingPadding: CGFloat = 0 {
         didSet {
             guard oldValue != leadingPadding else {
@@ -59,18 +56,18 @@ class FormSeparatorView: UIView {
             layoutIfNeeded()
         }
     }
-    
+
     var trailingPadding: CGFloat = 0 {
         didSet {
             guard oldValue != trailingPadding else {
                 return
             }
-            
+
             setNeedsLayout()
             layoutIfNeeded()
         }
     }
-    
+
     var color: UIColor? {
         set {
             lineView.backgroundColor = newValue
@@ -79,57 +76,57 @@ class FormSeparatorView: UIView {
             lineView.backgroundColor
         }
     }
-    
+
     var thickness: CGFloat {
         didSet {
             guard oldValue != thickness else {
                 return
             }
-            
+
             updateLineView()
         }
     }
 
     private var lineView = UIView()
 
-
     init(color: UIColor?, thickness: CGFloat, leadingPadding: CGFloat, trailingPadding: CGFloat) {
         self.thickness = thickness
         self.leadingPadding = leadingPadding
         self.trailingPadding = trailingPadding
-        
+
         super.init(frame: .zero)
-        
+
         addSubview(lineView)
-        
+
         self.color = color
-        
+
         updateLineView()
     }
-    
-    required init?(coder: NSCoder) {
+
+    @available(*, unavailable)
+    required init?(coder _: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
-    
+
     private func updateLineView() {
         frame.size.height = thickness
         autoresizingMask = .flexibleWidth
-        
+
         isAccessibilityElement = false
         isUserInteractionEnabled = false
-        
+
         setContentCompressionResistancePriority(.required, for: .vertical)
         setContentHuggingPriority(.required, for: .vertical)
-        
+
         invalidateIntrinsicContentSize()
     }
 
     override func layoutSubviews() {
         super.layoutSubviews()
-            
+
         lineView.frame = bounds.inset(by: UIEdgeInsets(top: 0, left: leadingPadding, bottom: 0, right: trailingPadding))
     }
-    
+
     override var intrinsicContentSize: CGSize {
         CGSize(width: UIView.noIntrinsicMetric, height: frame.height)
     }
