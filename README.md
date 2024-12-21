@@ -19,8 +19,8 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
 8. **DSL**：Supports a DSL syntax for a SwiftUI-like experience.
 
 ## Requirements
-iOS 13.0+
-tvOS 13.0+
+- iOS 13.0+
+- tvOS 13.0+
 
 ## Usage Example
 
