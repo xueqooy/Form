@@ -6,17 +6,16 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
 
 ## Key Features
 
-1. **Row Alignment Options**: Easily configure row alignments, including leading, trailing, center, and fill.
-2. **Multiple Views in a Row**: Add multiple views to a single row, allowing for complex layouts where multiple views are horizontally arranged within one row.
-3. **Section Support**: FormView supports organizing items into distinct sections.
-4. **Automatic Keyboard Handling**: FormView automatically adjusts its `contentInset` based on keyboard visibility.
-5. **Dynamic Height Adjustment**: FormView dynamically adjusts its height to fit its content and allows scrolling if the content exceeds the available space.
-6. **Customizable Backgrounds**: Supports applying custom background views to both the entire FormView and individual sections.
+1. **Row Alignment**: Easily configure row alignments.
+2. **Multiple Views in one Row**: Add multiple views to a single row.
+3. **Section**: Organizing items into distinct sections.
+4. **Keyboard Handling**: Automatically adjusts its `contentInset` based on keyboard visibility.
+6. **Customizable Background**: Supports applying custom background to both the entire FormView and individual sections.
 7. **Flexible Item Spacing**: Customize the spacing between items using three different approaches:
    - Set a global `itemSpacing` for the entire FormView.
    - Insert custom spacers using the `FormSpacer`.
    - Adjust item-specific spacing using the `settingCustomSpacingAfter` method on individual form items.
-8. **DSL**：Supports a DSL syntax for a SwiftUI-like experience.
+8. **DSL Syntax**：Supports a DSL syntax for a SwiftUI-like experience.
 
 ## Requirements
 - iOS 13.0+
