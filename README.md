@@ -1,4 +1,4 @@
-<img src="https://github.com/user-attachments/assets/24c71883-d624-48d1-b484-43c5a1b2b87a" alt="form_view_screenshot" height="300">
+<img src="https://github.com/user-attachments/assets/24c71883-d624-48d1-b484-43c5a1b2b87a" alt="form_view_screenshot" height="250">
 
 # FormView
 
@@ -18,9 +18,13 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
    - Adjust item-specific spacing using the `settingCustomSpacingAfter` method on individual form items.
 8. **DSL**：Supports a DSL syntax for a SwiftUI-like experience.
 
-### Example
+### Requirements
+iOS 13.0+
+tvOS 13.0+
 
-<img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="500">
+### Usage Example
+
+<img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300">
 
 ```swift
 formView.populate {
@@ -55,3 +59,25 @@ formView.populate {
     FormRow(loginButton, insets: .init(top: 0, left: 20, bottom: 0, right: 20))
 }
 ```
+
+## Installation
+
+**Using [Swift Package Manager](https://swift.org/package-manager)**:
+
+```swift
+import PackageDescription
+
+let package = Package(
+  name: "MyAwesomeApp",
+  dependencies: [
+    .Package(url: "https://github.com/xueqooy/Form", majorVersion: 2),
+  ]
+)
+```
+
+### License
+Form is licensed under the MIT License. See LICENSE for more information.
+
+### Contact
+- GitHub: https://github.com/xueqooy/XUI
+- Email: xue_qooy@163.com
