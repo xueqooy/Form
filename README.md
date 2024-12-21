@@ -23,8 +23,6 @@ FormView is a flexible, keyboard-aware and scrollable container similar to a ver
 
 ## Usage Example
 
-<img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300">
-
 ```swift
 formView.populate {
     FormRow(imageView, height: 80)
@@ -58,6 +56,11 @@ formView.populate {
     FormRow(loginButton, insets: .init(top: 0, left: 20, bottom: 0, right: 20))
 }
 ```
+
+### Snapshot
+| iOS | tvOS|
+|----|----|
+| <img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |  <img src="https://github.com/user-attachments/assets/fb4f593c-73c8-467c-8e8b-366a2a4e75a8" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |
 
 ## Installation
 
