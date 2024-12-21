@@ -6,8 +6,6 @@
 The combination of UIStackView(Vertical Axis) and UIScrollView, and more.
 </p>
 
-----------------
-
 ## Key Features
 
 1. **Row Alignment**: Easily configure row alignments.
