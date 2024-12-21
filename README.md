@@ -1,8 +1,12 @@
+<p align="center">
 <img src="https://github.com/user-attachments/assets/24c71883-d624-48d1-b484-43c5a1b2b87a" alt="form_view_screenshot" height="250">
+</p>
 
-# FormView
-
+<p align="center">
 The combination of UIStackView(Vertical Axis) and UIScrollView, and more.
+</p>
+
+----------------
 
 ## Key Features
 
