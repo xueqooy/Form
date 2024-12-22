@@ -77,6 +77,7 @@ let package = Package(
     .Package(url: "https://github.com/xueqooy/Form", majorVersion: 2),
   ]
 )
+```
 
 ## License
 Form is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
