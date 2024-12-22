@@ -1,5 +1,5 @@
 <p align="center">
-<img src="https://github.com/user-attachments/assets/24c71883-d624-48d1-b484-43c5a1b2b87a" alt="form_view_screenshot" height="250">
+<img src="https://github.com/user-attachments/assets/21436a66-71bb-4009-a014-de42474c1b27" alt="form_view_screenshot" width="300">
 </p>
 
 <p align="center">
@@ -62,7 +62,7 @@ formView.populate {
 ### Snapshot
 | iOS | tvOS|
 |----|----|
-| <img src="https://github.com/user-attachments/assets/15b11c1b-bbd8-45bc-b1a2-7572a11d1535" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |  <img src="https://github.com/user-attachments/assets/fb4f593c-73c8-467c-8e8b-366a2a4e75a8" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |
+| <img src="https://github.com/user-attachments/assets/9c4e22b9-882b-495c-a1be-d21fc4bed948" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |  <img src="https://github.com/user-attachments/assets/fb4f593c-73c8-467c-8e8b-366a2a4e75a8" alt="simulator_screenshot_60B125DB-0A0B-4B6E-9DBF-307E7A7360D" height="300"> |
 
 ## Installation
 
@@ -77,10 +77,9 @@ let package = Package(
     .Package(url: "https://github.com/xueqooy/Form", majorVersion: 2),
   ]
 )
-```
 
 ## License
-Form is licensed under the MIT License. See LICENSE for more information.
+Form is licensed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## Contact
 - GitHub: https://github.com/xueqooy/XUI
