@@ -11,12 +11,9 @@ The combination of UIStackView(Vertical Axis) and UIScrollView, and more.
 1. **Row Alignment**: Easily configure row alignments.
 2. **Multiple Views in one Row**: Add multiple views to a single row.
 3. **Section**: Organizing items into distinct sections.
-4. **Keyboard Handling**: Automatically adjusts its `contentInset` based on keyboard visibility.
+4. **Keyboard Handling**: Automatically adjusts its `contentInset` based on keyboard visibility and end editing gesture.
 6. **Customizable Background**: Supports applying custom background to both the entire FormView and individual sections.
-7. **Flexible Item Spacing**: Customize the spacing between items using three different approaches:
-   - Set a global `itemSpacing` for the entire FormView.
-   - Insert custom spacers using the `FormSpacer`.
-   - Adjust item-specific spacing using the `settingCustomSpacingAfter` method on individual form items.
+7. **Flexible Item Spacing**: Customize the spacing between items using three different approaches.
 8. **DSL Syntax**：Supports a DSL syntax for a SwiftUI-like experience.
 
 ## Requirements
