@@ -24,7 +24,7 @@ The combination of UIStackView(Vertical Axis) and UIScrollView, and more.
 
 ```swift
 formView.populate {
-    FormRow(imageView, height: 80)
+    FormRow(imageView, heightMode: .fixed(80))
         .settingCustomSpacingAfter(20)
     
     FormRow(titleLabel, alignment: .center)
